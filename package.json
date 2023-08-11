@@ -1,0 +1,20 @@
+{
+  "name": "battleshipgame",
+  "version": "1.0.0",
+  "description": "battleship-mern/\r │\r ├── client/                   # Frontend (React) code\r │   ├── public/               # Static files (like the initial HTML file)\r │   ├── src/\r │   │   ├── assets/           # Images, fonts, etc.\r │   │   ├── components/       # React components\r │   │   │   ├── Board/\r │   │   │   ├── Ship/\r │   │   │   ├── Button/\r │   │   │   ├── Profile/\r │   │   │   └── ...           # Other UI components\r │   │   ├── contexts/         # State management (using React Context or Redux)\r │   │   ├── utils/            # Utility functions and constants\r │   │   ├── App.js            # Main React component\r │   │   └── index.js          # Entry point for React\r │   └── package.json          # Dependencies for frontend\r │\r ├── server/                   # Backend (Node/Express) code\r │   ├── config/               # Configuration files (DB connection, JWT secret, etc.)\r │   ├── models/               # Mongoose data models (User, Game, etc.)\r │   ├── routes/               # Express routes\r │   │   ├── authRoutes.js     # Routes related to authentication\r │   │   ├── gameRoutes.js     # Routes related to game actions\r │   │   └── ...\r │   ├── utils/                # Utility functions and middleware\r │   ├── server.js             # Entry point for Express server\r │   └── package.json          # Dependencies for backend\r │\r ├── .gitignore                # Specify files and folders to ignore in Git\r ├── README.md                 # Project documentation\r └── package.json              # Root package.json for scripts and dependencies that apply to both client and server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rikilega/battleshipgame.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rikilega/battleshipgame/issues"
+  },
+  "homepage": "https://github.com/rikilega/battleshipgame#readme"
+}
