@@ -17,6 +17,10 @@
   "author": "Your Name",
   "license": "ISC",
   "dependencies": {
+    "socket.io-client": "^4.3.1", 
+  "@reduxjs/toolkit/query": "^1.9.5", 
+  "redux-thunk": "^2.3.0",
+    "dotenv": "^10.0.0",
     "@material-ui/core": "^5.14.4",
     "@material-ui/icons": "^4.11.3",
     "@reduxjs/toolkit": "^1.9.5",
