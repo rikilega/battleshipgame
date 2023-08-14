@@ -4,10 +4,12 @@
   "description": "A MERN stack battleship game",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server/server.js",
-    "heroku-postbuild": "cd client && npm install && npm run build"
+    "client": "npm start --prefix client",
+    "install-client": "npm install --prefix client",
+    "heroku-postbuild": "npm install --prefix client && npm run build --prefix client"
   },
+  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rikilega/battleshipgame.git"
