@@ -1,6 +1,6 @@
 // server/server.js
 
-require('dotenv').config();
+require('dotenv').config({ path: '../.env' });
 const express = require('express');
 const connectDB = require('./config/database');
 const usersRoutes = require('./routes/api/users')
