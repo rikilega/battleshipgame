@@ -1,12 +1,47 @@
 {
   "name": "client",
   "version": "1.0.0",
-  "description": "",
+  "description": "Battleship game client",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "keywords": [
+    "battleship",
+    "game",
+    "react"
+  ],
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {
+    "@material-ui/core": "^5.14.4",
+    "@material-ui/icons": "^4.11.3",
+    "@reduxjs/toolkit": "^1.9.5",
+    "axios": "^0.21.4",
+    "classnames": "^2.3.2",
+    "formik": "^2.4.3",
+    "framer-motion": "^4.1.17",
+    "lodash": "^4.17.21",
+    "react-redux": "^7.2.9",
+    "react-scripts": "^5.0.1",
+    "react-router-dom": "^6.15.0",
+    "redux": "^4.2.1",
+    "styled-components": "^5.3.11",
+    "yup": "^0.32.11"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }

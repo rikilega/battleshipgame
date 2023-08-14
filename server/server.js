@@ -1,35 +1,20 @@
+// server/server.js
+
 require('dotenv').config();
 const express = require('express');
-const mongoose = require('mongoose');
-const cors = require('cors');
-
-// Import Routes
-const userRoutes = require('./routes/api/users'); // Adjust the path if needed based on your project structure.
-
-// DB Config
-const db = process.env.MONGO_URI;
-
-// Connect to MongoDB
-mongoose.connect(db, { useNewUrlParser: true, useUnifiedTopology: true })
-    .then(() => console.log("MongoDB successfully connected"))
-    .catch(err => console.log(err));
-
+const connectDB = require('./config/database');
+const usersRoutes = require('./routes/api/users')
 const app = express();
 
-// Middlewares
-app.use(cors());
-app.use(express.json()); // This will allow us to get the data from a POST
+app.use(express.json());
 
-// Use Routes
-app.use('/api/users', userRoutes);
+app.use('/api/users', usersRoutes);
+// Connect to MongoDB
+connectDB();
 
-// Sample route
-app.get('/', (req, res) => {
-    res.send("Battleship API is running...");
-});
+// Middleware
+app.use(express.json({ extended: false }));
 
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
-    console.log(`Server started on port ${PORT}`);
-});
 
+app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
